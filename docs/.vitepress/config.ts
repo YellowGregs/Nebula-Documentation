@@ -46,5 +46,6 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'icon', href: 'https://files.catbox.moe/gl077v.png' }]
-  ]
+  ],
+  ignoreDeadLinks: true
 })
