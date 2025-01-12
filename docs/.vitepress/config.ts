@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: "Nebula - Documentation",
+  title: "Nebula Documentation",
   description: "Nebula - Official Documentation",
   themeConfig: {
     logo: 'https://files.catbox.moe/gl077v.png',
