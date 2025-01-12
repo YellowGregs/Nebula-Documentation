@@ -3,7 +3,6 @@
 ## Title 2
 
 ### loadfile(path: string)
-:shrug:
 
 ```lua
 loadfile("scripts/test.lua")
