@@ -1,7 +1,7 @@
 {
-  "name": "modern-docs",
+  "name": "Nebula Documentation",
   "version": "1.0.0",
-  "description": "Modern Documentation Site",
+  "description": "Nebula Documentation",
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
