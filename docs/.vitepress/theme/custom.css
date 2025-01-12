@@ -1,0 +1,251 @@
+/* 
+
+if any of the nebula developer want changes in the website design than change from here.
+
+*/
+
+:root {
+    --vp-layout-max-width: 2000px;
+    --animation-duration: 0.3s;
+    --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --border-radius: 10px;
+    --content-padding: 2rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all var(--animation-duration) var(--animation-timing);
+  }
+  
+  .vp-doc h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+  
+  .vp-doc p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--vp-c-text-2);
+  }
+  
+  .VPDoc .content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: var(--content-padding);
+  }
+  
+  .vp-doc div[class*='language-'] {
+    border-radius: var(--border-radius);
+    background: var(--vp-c-bg-soft);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin: 1.5rem 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .vp-doc div[class*='language-']:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.15);
+  }
+  
+  .DocSearch-Button {
+    width: 100%;
+    max-width: 350px;
+    height: 45px !important;
+    border-radius: var(--border-radius) !important;
+    background: var(--vp-c-bg-soft) !important;
+    border: 2px solid transparent !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .DocSearch-Button:hover {
+    background: var(--vp-c-bg) !important;
+    border-color: var(--vp-c-brand) !important;
+    transform: translateY(-1px);
+  }
+  
+  .VPSidebarItem {
+    margin: 0.2rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+  }
+  
+  .VPSidebarItem:hover {
+    background: var(--vp-c-bg-soft);
+    transform: translateX(4px);
+  }
+  
+  .custom-footer {
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(to bottom, transparent, var(--vp-c-bg-soft));
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+  
+  .custom-footer p {
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    color: var(--vp-c-text-2);
+  }
+  
+  .custom-footer a {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: var(--border-radius);
+    background: var(--vp-c-brand);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .custom-footer a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: var(--vp-c-brand-dark);
+  }
+  
+  .VPContent {
+    animation: fade-slide-in 0.4s ease-out;
+  }
+  
+  @keyframes fade-slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .VPButton {
+    border-radius: var(--border-radius) !important;
+    padding: 0.7rem 1.5rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .VPButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vp-doc ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .vp-doc ul li {
+    background: var(--vp-c-bg-soft);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease;
+  }
+  
+  .vp-doc ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 1200px) {
+    .VPDoc .content {
+      padding: 1.5rem;
+    }
+  
+    .vp-doc h1 {
+      font-size: 2rem;
+    }
+  
+    .vp-doc p {
+      font-size: 1rem;
+    }
+  
+    .DocSearch-Button {
+      width: 100%;
+      max-width: 350px;
+    }
+  
+    .VPSidebar {
+      width: 180px;
+    }
+  
+    .VPSidebarItem {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .VPDoc .content {
+      padding: 1rem;
+    }
+  
+    .vp-doc h1 {
+      font-size: 1.5rem;
+    }
+  
+    .vp-doc p {
+      font-size: 0.9rem;
+    }
+  
+    .VPSidebar {
+      width: 100%;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--vp-c-bg-soft);
+      max-width: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+  
+    .VPButton {
+      padding: 0.6rem 1.2rem !important;
+    }
+  
+    .DocSearch-Button {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vp-doc ul {
+      grid-template-columns: 1fr;
+    }
+  
+    .vp-doc h1 {
+      font-size: 1.25rem;
+    }
+  
+    .vp-doc p {
+      font-size: 0.8rem;
+    }
+  
+    .VPDoc .content {
+      padding: 1rem;
+    }
+  
+    .VPSidebar {
+      padding: 0.5rem;
+    }
+  
+    .custom-footer {
+      padding: 2rem 1rem;
+    }
+  
+    .custom-footer a {
+      padding: 0.5rem 1rem;
+    }
+  }
