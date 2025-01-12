@@ -5,7 +5,7 @@ if any of the nebula developer want changes in the website design than change fr
 */
 
 :root {
-    --vp-layout-max-width: 2000px;
+    --vp-layout-max-width: 1550px;
     --animation-duration: 0.3s;
     --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
     --border-radius: 10px;
