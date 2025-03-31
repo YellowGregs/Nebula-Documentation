@@ -5,6 +5,10 @@ export default defineConfig({
   title: 'Nebula',
   description: 'Nebula Documentation',
 
+  head: [
+    ['link', { rel: 'icon', href: 'https://files.catbox.moe/gl077v.png' }]
+  ],
+
   themeConfig: {
     logo: 'https://files.catbox.moe/gl077v.png',
     siteTitle: 'Nebula',
@@ -14,7 +18,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' },
+      { icon: 'github', link: 'https://github.com/YellowGregs/Nebula-Documentation' },
       { icon: 'discord', link: 'https://discord.gg/EvVT3xEw84' }
     ],
 
