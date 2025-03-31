@@ -11,7 +11,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: 'https://files.catbox.moe/gl077v.png',
-    siteTitle: 'Nebula',
+    // siteTitle: 'Nebula',
     
     search: {
       provider: 'local'
